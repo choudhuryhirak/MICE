@@ -1,0 +1,76 @@
+/* your styles go here */
+
+
+html,body
+{
+    font-family: 'Ubuntu', sans-serif;
+    
+}
+
+.sidebar-menu
+{
+    text-align: center;
+    
+}
+
+.sidebar-offcanvas
+{
+    background-color: #424242;
+    height: 100%;
+}
+
+ul.sidebar-menu
+{
+    margin-left: -40px;
+}
+
+#topbar
+{
+    background-color: #202020;
+    
+}
+
+.wrapper
+{
+ 
+    background-color: #fafafa;
+    
+}
+
+#header
+{
+ 
+    font-size: 40px;
+    font-weight: 700;
+}
+
+
+/* pagination links*/
+
+ul.pagination {
+    display: inline-block;
+    padding: 10px;
+    margin: 0;
+}
+
+ul.pagination li {display: inline;
+}
+
+ul.pagination li a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 50px;
+    margin: 0 4px;
+}
+
+ul.pagination li a.active {
+    border-style: dashed;
+    border: #d8b46a;
+    background-color: #424242;
+    color: black;
+    border-radius: 50px;
+}
+
+ul.pagination li a:hover:not(.active) {background-color: #424242;}
