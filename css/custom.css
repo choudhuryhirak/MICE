@@ -4,6 +4,35 @@
 html,body
 {
     font-family: 'Ubuntu', sans-serif;
+    background-color: #424242
+}
+
+.footer
+{
+    
+    background-color: #e6e7e8;
+    padding: 25px;
+    
+}
+
+#primarycta
+{
+    color: #d8b46a;
+    border-color: #d8b46a;
+    background-color: #424242;
+    border-width: medium;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+}
+
+img#brand_logo.img-responsive
+{
+    margin-left: 25px;    
+}
+
+#primarycta:hover
+{
+    background-color: #202020;
     
 }
 
@@ -41,7 +70,7 @@ ul.sidebar-menu
 {
  
     font-size: 40px;
-    font-weight: 700;
+    font-weight: 400;
 }
 
 
@@ -66,11 +95,16 @@ ul.pagination li a {
 }
 
 ul.pagination li a.active {
-    border-style: dashed;
     border: #d8b46a;
-    background-color: #424242;
+    background-color: #ffffff;
     color: black;
     border-radius: 50px;
 }
 
-ul.pagination li a:hover:not(.active) {background-color: #424242;}
+ul.pagination li a:hover:not(.active) 
+{
+    background-color: #fafafa;
+    border-style: solid;
+    border-width: thin;
+    border-color: #d8b46a;
+}
