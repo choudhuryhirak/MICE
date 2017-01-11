@@ -31,6 +31,13 @@ img#brand_logo.img-responsive
     margin-left: 25px;    
 }
 
+.btn-default:hover, .btn-default:focus
+{
+  color:#d8b46a;
+  background-color:#424242;
+}
+
+
 #primarycta:hover
 {
     background-color: #202020;
@@ -41,7 +48,6 @@ img#brand_logo.img-responsive
 .wrapper
 {
     background: url('../img/mice/cover.png');
-    background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
     -webkit-background-size: cover;
