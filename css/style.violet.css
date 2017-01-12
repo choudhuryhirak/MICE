@@ -1808,14 +1808,14 @@ fieldset[disabled] .btn-transparent.active {
 .label {
   font-family: "Ubuntu", sans-serif;
   font-weight: normal;
-  text-transform: uppercase;
+  
 }
 /* forms.less */
 label {
   font-weight: normal;
   color: #555555;
   font-size: 14px;
-  text-transform: uppercase;
+  
   letter-spacing: 0.1em;
 }
 .form-control {
@@ -2085,7 +2085,7 @@ address {
 .panel {
   margin-bottom: 24px;
   background-color: #ffffff;
-  border: 1px solid transparent;
+  border: none;
   border-radius: 0;
   -webkit-box-shadow: 0 0 0;
   box-shadow: 0 0 0;
@@ -2096,27 +2096,27 @@ address {
 .panel-default > .panel-heading {
   color: #333333;
   background-color: #ffffff;
-  border-color: #666666;
+  border: none;
 }
 .panel-default > .panel-heading + .panel-collapse .panel-body {
-  border-top-color: #666666;
+  border: none;
 }
 .panel-default > .panel-footer + .panel-collapse .panel-body {
-  border-bottom-color: #666666;
+  border: none;
 }
 .panel-primary {
-  border-color: #d8b46a;
+  border: none;
 }
 .panel-primary > .panel-heading {
   color: #ffffff;
   background-color: #d8b46a;
-  border-color: #d8b46a;
+  border: none;
 }
 .panel-primary > .panel-heading + .panel-collapse .panel-body {
-  border-top-color: #d8b46a;
+  border: none;
 }
 .panel-primary > .panel-footer + .panel-collapse .panel-body {
-  border-bottom-color: #d8b46a;
+  border: none;
 }
 .panel-primary .panel-title {
   font-weight: 300;

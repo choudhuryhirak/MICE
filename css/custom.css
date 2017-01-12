@@ -7,6 +7,16 @@ html,body
     background-color: #424242
 }
 
+
+#accordion > .panel-default, .panel-heading
+{
+    border: none;
+    
+    
+}
+
+
+
 .footer
 {
     
