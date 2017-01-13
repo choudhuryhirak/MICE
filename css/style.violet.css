@@ -2094,9 +2094,11 @@ address {
   border-color: #666666;
 }
 .panel-default > .panel-heading {
-  color: #333333;
-  background-color: #ffffff;
-  border: none;
+  color: #d8b46a;
+  background-color: #242424;
+  border: solid;
+    border-width: thin;
+    border-radius: 5px;
 }
 .panel-default > .panel-heading + .panel-collapse .panel-body {
   border: none;
