@@ -1,0 +1,101 @@
+/* your styles go here */
+
+a
+{
+color: #616161;
+text-decoration: none;
+}
+
+a:hover
+{
+color: #d8b46a;
+
+}
+
+.grid
+{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+body.home
+{
+
+    background: url('../img/mice/cover.png');
+    background-position: center center;
+    background-attachment: fixed;
+    background-color: #242424;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#textlink
+{
+    color: #616161;
+    
+    
+}
+
+
+.post
+{
+
+  background-color: rgba(255,255,255,0.9);
+  padding-bottom: 10px;
+}
+
+.masonry-item
+{
+  padding: 20px;
+
+}
+
+.box-masonry-text > h4 > a
+{
+  color: black;
+
+
+}
+
+.box-masonry-text
+{
+  background-color: rgba(255,255,255,0.9);
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+}
+
+
+.box-masonry-hover-text-header > h4 > a
+{
+  color: black;
+
+}
+
+.box-masonry-hover-text-header
+{
+  background-color: rgba(255,255,255,0.9);
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+}
+
+.footer
+{
+
+    background-color: #ccc;
+    padding: 25px;
+}
+
+.footer > a
+{
+  color: black;
+}
+
+
+.footer > a:hover
+{
+  color: #d8b46a;
+}
