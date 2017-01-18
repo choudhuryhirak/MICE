@@ -51,7 +51,7 @@
                                       
               
               <ul class="sidebar-menu"> 
-                <li class="active"><a href="my_messages.html">Messages</a></li>
+                <li><a href="my_messages.html">Messages</a></li>
                 <li><a href="my_member.html">Member Directory</a></li>
                 <li><a href="my_groups.html">Groups</a></li>
                 <li><a href="my_bookmarks.html">Bookmarks</a></li>
@@ -234,245 +234,211 @@
                 <br><br>
                 <div class="row">
                     <div class="col-lg-12 container-fluid">
-                        <p class="lead" id="header">My Messages</p>
+                        <p class="lead" id="header">Events</p>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-xs-12" id="pills">
                         <div class="well well-lg">
                             <ul class="nav nav-pills">
-                                <li class="active"><a data-toggle="pill" href="#inbox">Inbox</a></li>
-                                <li><a data-toggle="pill" href="#compose">Compose</a></li>
-                                <li><a data-toggle="pill" href="#trash">Trash</a></li>
-                                <li><a data-toggle="pill" href="#archive">Archive</a></li>
-                                <li><a data-toggle="pill" href="#send">Sent Mail</a></li>
+                                <li class="active"><a data-toggle="pill" href="#oevents">Popular Events</a></li>
+                                <li><a data-toggle="pill" href="#uevents">Upcoming Events</a></li>
+                                <li><a data-toggle="pill" href="#pevents">Past Events</a></li>
+                                
                             </ul>
                             <br>
                             <div class="tab-content">
-                                <div id="inbox" class="tab-pane fade in active">
-                                  <h3>Inbox</h3>
+                                <div id="oevents" class="tab-pane fade in active">
+                                  <h3>Popular Events</h3>
                                   <br>
-                                  <div class="row">
-                                     <div class="col-xs-12">
-                                        <div class="container-fluid">
-	                                    <div class="row">
-                                            <div class="box-body no-padding">
-                                                      <div class="mailbox-controls">
-                                                        <!-- Check all button -->
-                                                        <button class="btn btn-default btn-sm checkbox-toggle"><i class="fa fa-square-o"></i></button>
-                                                        <div class="btn-group">
-                                                          <button class="btn btn-default btn-sm"><i class="fa fa-trash-o"></i></button>
-                                                          <button class="btn btn-default btn-sm"><i class="fa fa-archive"></i></button>
-                                                          <button class="btn btn-default btn-sm"><i class="fa fa-share-alt"></i></button>
-                                                        </div><!-- /.btn-group -->
-                                                        <button class="btn btn-default btn-sm"><i class="fa fa-refresh"></i></button>
-                                                        <div class="pull-right">
-                                                          1-50/200
-                                                          <div class="btn-group">
-                                                            <button class="btn btn-default btn-sm"><i class="fa fa-arrow-left"></i></button>
-                                                            <button class="btn btn-default btn-sm"><i class="fa fa-arrow-right"></i></button>
-                                                          </div><!-- /.btn-group -->
-                                                        </div><!-- /.pull-right -->
-                                                      </div>
-                                                      <hr>
-                                                      <div class="table-responsive mailbox-messages">
-                                                        <table class="table table-hover table-striped">
-                                                          <tbody>
-                                                            <tr>
-                                                              <td><input type="checkbox"></td>
-                                                              <td class="mailbox-star"><a href="#"><i class="fa fa-star text-yellow"></i></a></td>
-                                                              <td class="mailbox-name"><a href="read-mail.html">WM06</a></td>
-                                                              <td class="mailbox-subject"><b>WM06</b> - Trying to find a solution to this problem...</td>
-                                                              <td class="mailbox-attachment"></td>
-                                                              <td class="mailbox-date">5 mins ago</td>
-                                                            </tr>
-                                                            <tr>
-                                                              <td><input type="checkbox"></td>
-                                                              <td class="mailbox-star"><a href="#"><i class="fa fa-star-o text-yellow"></i></a></td>
-                                                              <td class="mailbox-name"><a href="read-mail.html">WM06</a></td>
-                                                              <td class="mailbox-subject"><b>WM06</b> - Trying to find a solution to this problem...</td>
-                                                              <td class="mailbox-attachment"><i class="fa fa-paperclip"></i></td>
-                                                              <td class="mailbox-date">28 mins ago</td>
-                                                            </tr>
-                                                            <tr>
-                                                              <td><input type="checkbox"></td>
-                                                              <td class="mailbox-star"><a href="#"><i class="fa fa-star-o text-yellow"></i></a></td>
-                                                              <td class="mailbox-name"><a href="read-mail.html">WM06</a></td>
-                                                              <td class="mailbox-subject"><b>WM06</b> - Trying to find a solution to this problem...</td>
-                                                              <td class="mailbox-attachment"><i class="fa fa-paperclip"></i></td>
-                                                              <td class="mailbox-date">11 hours ago</td>
-                                                            </tr>
-                                                            <tr>
-                                                              <td><input type="checkbox"></td>
-                                                              <td class="mailbox-star"><a href="#"><i class="fa fa-star text-yellow"></i></a></td>
-                                                              <td class="mailbox-name"><a href="read-mail.html">WM06</a></td>
-                                                              <td class="mailbox-subject"><b>WM06</b> - Trying to find a solution to this problem...</td>
-                                                              <td class="mailbox-attachment"></td>
-                                                              <td class="mailbox-date">15 hours ago</td>
-                                                            </tr>
-                                                            <tr>
-                                                              <td><input type="checkbox"></td>
-                                                              <td class="mailbox-star"><a href="#"><i class="fa fa-star text-yellow"></i></a></td>
-                                                              <td class="mailbox-name"><a href="read-mail.html">WM06</a></td>
-                                                              <td class="mailbox-subject"><b>WM06</b> - Trying to find a solution to this problem...</td>
-                                                              <td class="mailbox-attachment"><i class="fa fa-paperclip"></i></td>
-                                                              <td class="mailbox-date">Yesterday</td>
-                                                            </tr>
-                                                            <tr>
-                                                              <td><input type="checkbox"></td>
-                                                              <td class="mailbox-star"><a href="#"><i class="fa fa-star-o text-yellow"></i></a></td>
-                                                              <td class="mailbox-name"><a href="read-mail.html">WM06</a></td>
-                                                              <td class="mailbox-subject"><b>WM06</b> - Trying to find a solution to this problem...</td>
-                                                              <td class="mailbox-attachment"><i class="fa fa-paperclip"></i></td>
-                                                              <td class="mailbox-date">2 days ago</td>
-                                                            </tr>
-                                                            <tr>
-                                                              <td><input type="checkbox"></td>
-                                                              <td class="mailbox-star"><a href="#"><i class="fa fa-star-o text-yellow"></i></a></td>
-                                                              <td class="mailbox-name"><a href="read-mail.html">WM06</a></td>
-                                                              <td class="mailbox-subject"><b>WM06</b> - Trying to find a solution to this problem...</td>
-                                                              <td class="mailbox-attachment"><i class="fa fa-paperclip"></i></td>
-                                                              <td class="mailbox-date">2 days ago</td>
-                                                            </tr>
-                                                            <tr>
-                                                              <td><input type="checkbox"></td>
-                                                              <td class="mailbox-star"><a href="#"><i class="fa fa-star text-yellow"></i></a></td>
-                                                              <td class="mailbox-name"><a href="read-mail.html">WM06</a></td>
-                                                              <td class="mailbox-subject"><b>WM06</b> - Trying to find a solution to this problem...</td>
-                                                              <td class="mailbox-attachment"></td>
-                                                              <td class="mailbox-date">2 days ago</td>
-                                                            </tr>
-                                                            <tr>
-                                                              <td><input type="checkbox"></td>
-                                                              <td class="mailbox-star"><a href="#"><i class="fa fa-star text-yellow"></i></a></td>
-                                                              <td class="mailbox-name"><a href="read-mail.html">WM06</a></td>
-                                                              <td class="mailbox-subject"><b>WM06</b> - Trying to find a solution to this problem...</td>
-                                                              <td class="mailbox-attachment"></td>
-                                                              <td class="mailbox-date">2 days ago</td>
-                                                            </tr>
-                                                            <tr>
-                                                              <td><input type="checkbox"></td>
-                                                              <td class="mailbox-star"><a href="#"><i class="fa fa-star-o text-yellow"></i></a></td>
-                                                              <td class="mailbox-name"><a href="read-mail.html">WM06</a></td>
-                                                              <td class="mailbox-subject"><b>WM06</b> - Trying to find a solution to this problem...</td>
-                                                              <td class="mailbox-attachment"></td>
-                                                              <td class="mailbox-date">2 days ago</td>
-                                                            </tr>
-                                                            <tr>
-                                                              <td><input type="checkbox"></td>
-                                                              <td class="mailbox-star"><a href="#"><i class="fa fa-star-o text-yellow"></i></a></td>
-                                                              <td class="mailbox-name"><a href="read-mail.html">WM06</a></td>
-                                                              <td class="mailbox-subject"><b>WM06</b> - Trying to find a solution to this problem...</td>
-                                                              <td class="mailbox-attachment"><i class="fa fa-paperclip"></i></td>
-                                                              <td class="mailbox-date">4 days ago</td>
-                                                            </tr>
-                                                            <tr>
-                                                              <td><input type="checkbox"></td>
-                                                              <td class="mailbox-star"><a href="#"><i class="fa fa-star text-yellow"></i></a></td>
-                                                              <td class="mailbox-name"><a href="read-mail.html">WM06</a></td>
-                                                              <td class="mailbox-subject"><b>WM06</b> - Trying to find a solution to this problem...</td>
-                                                              <td class="mailbox-attachment"></td>
-                                                              <td class="mailbox-date">12 days ago</td>
-                                                            </tr>
-                                                            <tr>
-                                                              <td><input type="checkbox"></td>
-                                                              <td class="mailbox-star"><a href="#"><i class="fa fa-star-o text-yellow"></i></a></td>
-                                                              <td class="mailbox-name"><a href="read-mail.html">WM06</a></td>
-                                                              <td class="mailbox-subject"><b>WM06</b> - Trying to find a solution to this problem...</td>
-                                                              <td class="mailbox-attachment"><i class="fa fa-paperclip"></i></td>
-                                                              <td class="mailbox-date">12 days ago</td>
-                                                            </tr>
-                                                            <tr>
-                                                              <td><input type="checkbox"></td>
-                                                              <td class="mailbox-star"><a href="#"><i class="fa fa-star text-yellow"></i></a></td>
-                                                              <td class="mailbox-name"><a href="read-mail.html">WM06</a></td>
-                                                              <td class="mailbox-subject"><b>WM06</b> - Trying to find a solution to this problem...</td>
-                                                              <td class="mailbox-attachment"><i class="fa fa-paperclip"></i></td>
-                                                              <td class="mailbox-date">14 days ago</td>
-                                                            </tr>
-                                                            <tr>
-                                                              <td><input type="checkbox"></td>
-                                                              <td class="mailbox-star"><a href="#"><i class="fa fa-star text-yellow"></i></a></td>
-                                                              <td class="mailbox-name"><a href="read-mail.html">WM06</a></td>
-                                                              <td class="mailbox-subject"><b>WM06</b> - Trying to find a solution to this problem...</td>
-                                                              <td class="mailbox-attachment"><i class="fa fa-paperclip"></i></td>
-                                                              <td class="mailbox-date">15 days ago</td>
-                                                            </tr>
-                                                          </tbody>
-                                                        </table><!-- /.table -->
-                                                      </div><!-- /.mail-box-messages -->
-                                                    </div><!-- /.box-body -->
-                                                        <hr>
-                                                        <div class="box-footer no-padding">
-                                                          <div class="mailbox-controls">
-                                                            <!-- Check all button -->
-                                                            <button class="btn btn-default btn-sm checkbox-toggle"><i class="fa fa-square-o"></i></button>
-                                                            <div class="btn-group">
-                                                              <button class="btn btn-default btn-sm"><i class="fa fa-trash-o"></i></button>
-                                                              <button class="btn btn-default btn-sm"><i class="fa fa-archive"></i></button>
-                                                              <button class="btn btn-default btn-sm"><i class="fa fa-share-alt"></i></button>
-                                                            </div><!-- /.btn-group -->
-                                                            <button class="btn btn-default btn-sm"><i class="fa fa-refresh"></i></button>
-                                                            <div class="pull-right">
-                                                              1-50/200
-                                                              <div class="btn-group">
-                                                                <button class="btn btn-default btn-sm"><i class="fa fa-arrow-left"></i></button>
-                                                                <button class="btn btn-default btn-sm"><i class="fa fa-arrow-right"></i></button>
-                                                              </div><!-- /.btn-group -->
-                                                            </div><!-- /.pull-right -->
-                                                          </div>
-                                                        </div>
-                                                      </div><!-- /. box -->
-                                    </div>
-                                    </div>
-                                    </div>
+                                  
+                                     
+                                    <div class="row">
+                                        <div class="col-xs-3">
+                                          <a href="#"><img src="img/mice/ph-announce.png" alt="" class="img-responsive"></a>  
+                                        </div>
+                                        <div class="col-xs-9">
+                                            <p><a href="#">Lorem Ipsum is simply dummy text of the printing and typesetti ng industry.</a>
+                                             <br>
+                                            <div class="row">
+                                                <div class="col-xs-3">Date</div>
+                                                <div class="col-xs-9"><a href="#"><i class="fa fa-map-marker">&nbsp;Location</i></a></div>
+                                            </div>
+                                            <br>
+                                            <p id="eventdesc">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                                            <br>
+                                            <p id="attendees" style="color:#616161">No of Attendees</p>
+                                            
+                                            
+
+                                        </div>
+                                    </div><hr>
+                                    
+                                    <div class="row">
+                                        <div class="col-xs-3">
+                                          <a href="#"><img src="img/mice/ph-announce.png" alt="" class="img-responsive"></a>  
+                                        </div>
+                                        <div class="col-xs-9">
+                                            <p><a href="#">Lorem Ipsum is simply dummy text of the printing and typesetti ng industry.</a>
+                                             <br>
+                                            <div class="row">
+                                                <div class="col-xs-3">Date</div>
+                                                <div class="col-xs-9"><a href="#"><i class="fa fa-map-marker">&nbsp;Location</i></a></div>
+                                            </div>
+                                            <br>
+                                            <p id="eventdesc">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                                            <br>
+                                            <p id="attendees" style="color:#616161">No of Attendees</p>
+                                            
+                                            
+
+                                        </div>
+                                    </div><hr>
+                                    
+                                    <div class="row">
+                                        <div class="col-xs-3">
+                                          <a href="#"><img src="img/mice/ph-announce.png" alt="" class="img-responsive"></a>  
+                                        </div>
+                                        <div class="col-xs-9">
+                                            <p><a href="#">Lorem Ipsum is simply dummy text of the printing and typesetti ng industry.</a>
+                                             <br>
+                                            <div class="row">
+                                                <div class="col-xs-3">Date</div>
+                                                <div class="col-xs-9"><a href="#"><i class="fa fa-map-marker">&nbsp;Location</i></a></div>
+                                            </div>
+                                            <br>
+                                            <p id="eventdesc">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                                            <br>
+                                            <p id="attendees" style="color:#616161">No of Attendees</p>
+                                            
+                                            
+
+                                        </div>
+                                    </div><hr>
+                                    
+                                    <div class="row">
+                                        <div class="col-xs-3">
+                                          <a href="#"><img src="img/mice/ph-announce.png" alt="" class="img-responsive"></a>  
+                                        </div>
+                                        <div class="col-xs-9">
+                                            <p><a href="#">Lorem Ipsum is simply dummy text of the printing and typesetti ng industry.</a>
+                                             <br>
+                                            <div class="row">
+                                                <div class="col-xs-3">Date</div>
+                                                <div class="col-xs-9"><a href="#"><i class="fa fa-map-marker">&nbsp;Location</i></a></div>
+                                            </div>
+                                            <br>
+                                            <p id="eventdesc">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                                            <br>
+                                            <p id="attendees" style="color:#616161">No of Attendees</p>
+                                            
+                                            
+
+                                        </div>
+                                    </div><hr>
+                                    
+                                
                                     <!-- Code snippet from.. --> 
                                   
                                 </div>
                                 
-                                <div id="compose" class="tab-pane fade">
-                                  <h3>Send Mail</h3>
-                                  <div class="row">
-                                      <div class="col-xs-12 container-fluid">
-                                          <p>
-                                      
-                                          <form role="form" class="form-horizontal">
-                                          <div class="form-group">
-                                              <label class="col-sm-2" for="inputTo">To</label>
-                                              <div class="col-sm-10"><input type="email" class="form-control" id="inputTo" placeholder="comma separated list of recipients"></div>
-                                            </div>
-                                            <div class="form-group">
-                                              <label class="col-sm-2" for="inputSubject">Subject</label>
-                                              <div class="col-sm-10"><input type="text" class="form-control" id="inputSubject" placeholder="subject"></div>
-                                            </div>
-                                            <div class="form-group">
-                                              <label class="col-sm-12" for="inputBody">Message</label>
-                                              <div class="col-sm-12"><textarea class="form-control" id="inputBody" rows="18"></textarea></div>
-                                            </div>
-                                                                              
-                                          </form>
-                                          </p>
-                                          
-                                      </div>
-                                  </div>
-                                   
+                                <div id="uevents" class="tab-pane fade">
+                                  
+                                  <h3>Upcoming Events</h3>
+                                  <br>
+                                  
+                                     
                                     <div class="row">
-                                          <div class="col-xs-8">
-                                              <button type="button" class="btn btn-default pull-left" >Cancel</button> &nbsp; &nbsp; &nbsp;
-                                            <button type="button" class="btn btn-default pull-left">Save Draft</button>
+                                        <div class="col-xs-3">
+                                          <a href="#"><img src="img/mice/ph-announce.png" alt="" class="img-responsive"></a>  
+                                        </div>
+                                        <div class="col-xs-9">
+                                            <p><a href="#">Lorem Ipsum is simply dummy text of the printing and typesetti ng industry.</a>
+                                             <br>
+                                            <div class="row">
+                                                <div class="col-xs-3">Date</div>
+                                                <div class="col-xs-9"><a href="#"><i class="fa fa-map-marker">&nbsp;Location</i></a></div>
                                             </div>
-                                            <div class="col-xs-4">
-                                             <button type="button" class="btn btn-default">Send <i class="fa fa-arrow-circle-right fa-lg"></i></button>
-                                              </div>
-                                          
-                                      </div>
+                                            <br>
+                                            <p id="eventdesc">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                                            <br>
+                                            <p id="attendees" style="color:#616161">No of Attendees</p>
+                                            
+                                            
+
+                                        </div>
+                                    </div><hr>
                                     
+                                    <div class="row">
+                                        <div class="col-xs-3">
+                                          <a href="#"><img src="img/mice/ph-announce.png" alt="" class="img-responsive"></a>  
+                                        </div>
+                                        <div class="col-xs-9">
+                                            <p><a href="#">Lorem Ipsum is simply dummy text of the printing and typesetti ng industry.</a>
+                                             <br>
+                                            <div class="row">
+                                                <div class="col-xs-3">Date</div>
+                                                <div class="col-xs-9"><a href="#"><i class="fa fa-map-marker">&nbsp;Location</i></a></div>
+                                            </div>
+                                            <br>
+                                            <p id="eventdesc">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                                            <br>
+                                            <p id="attendees" style="color:#616161">No of Attendees</p>
+                                            
+                                            
+
+                                        </div>
+                                    </div><hr>
+                                    
+                                    <div class="row">
+                                        <div class="col-xs-3">
+                                          <a href="#"><img src="img/mice/ph-announce.png" alt="" class="img-responsive"></a>  
+                                        </div>
+                                        <div class="col-xs-9">
+                                            <p><a href="#">Lorem Ipsum is simply dummy text of the printing and typesetti ng industry.</a>
+                                             <br>
+                                            <div class="row">
+                                                <div class="col-xs-3">Date</div>
+                                                <div class="col-xs-9"><a href="#"><i class="fa fa-map-marker">&nbsp;Location</i></a></div>
+                                            </div>
+                                            <br>
+                                            <p id="eventdesc">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                                            <br>
+                                            <p id="attendees" style="color:#616161">No of Attendees</p>
+                                            
+                                            
+
+                                        </div>
+                                    </div><hr>
+                                    
+                                    <div class="row">
+                                        <div class="col-xs-3">
+                                          <a href="#"><img src="img/mice/ph-announce.png" alt="" class="img-responsive"></a>  
+                                        </div>
+                                        <div class="col-xs-9">
+                                            <p><a href="#">Lorem Ipsum is simply dummy text of the printing and typesetti ng industry.</a>
+                                             <br>
+                                            <div class="row">
+                                                <div class="col-xs-3">Date</div>
+                                                <div class="col-xs-9"><a href="#"><i class="fa fa-map-marker">&nbsp;Location</i></a></div>
+                                            </div>
+                                            <br>
+                                            <p id="eventdesc">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                                            <br>
+                                            <p id="attendees" style="color:#616161">No of Attendees</p>
+                                            
+                                            
+
+                                        </div>
+                                    </div><hr>
+                                    
+                                
                                     
                                      
                                 </div>
                                 
-                                <div id="trash" class="tab-pane fade">
-                                  <h3>Trash</h3>
+                                <div id="pevents" class="tab-pane fade">
+                                  <h3> Past Events</h3>
                                   <p>
                                       
                                       <div class="row">
@@ -663,8 +629,9 @@
                             
                             
                         </div>
-                    </div>                    
-                                
+                    </div> 
+                
+                
                 <br><br>
                 
                 <div class="row">
@@ -730,6 +697,122 @@
                         
                     
                 </div>
+                
+                
+                <div class="grid">
+              <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 masonry-item"> 
+                  <div class="box-masonry"><a href="detail.html" title="" class="box-masonry-image with-hover-overlay"><img src="img/portfolio/a4-paper.jpg" alt="" class="img-responsive"></a>
+                    <div class="box-masonry-hover-text-header"> 
+                      <h4> <a href="detail.html">Name of the work 1</a></h4>
+                      <div class="box-masonry-desription">
+                        <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life. One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar. </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 masonry-item"> 
+                  <div class="box-masonry"><a href="detail.html" title="" class="box-masonry-image with-hover-overlay with-hover-icon"><img src="img/portfolio/business-card-26.jpg" alt="" class="img-responsive"></a>
+                    <div class="box-masonry-text">
+                      <h4> <a href="detail.html">Name of the work 2</a></h4>
+                      <div class="box-masonry-desription">
+                        <p> When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 masonry-item"> 
+                  <div class="box-masonry"><a href="detail.html" title="" class="box-masonry-image with-hover-overlay with-hover-icon"><img src="img/portfolio/gravity-paper.jpg" alt="" class="img-responsive"></a>
+                    <div class="box-masonry-text">
+                      <h4> <a href="detail.html">Name of the work 3</a></h4>
+                      <div class="box-masonry-desription">
+                        <p>Fifth abundantly made Give sixth hath. Cattle creature i be don't them.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 masonry-item"> 
+                  <div class="box-masonry">
+                    <div class="box-masonry-text">
+                      <h4> <a href="detail.html">Item without image</a></h4>
+                      <div class="box-masonry-desription">
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.  A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 masonry-item"> 
+                  <div class="box-masonry"><a href="detail.html" title="" class="box-masonry-image with-hover-overlay"><img src="img/portfolio/business-card.jpg" alt="" class="img-responsive"></a>
+                    <div class="box-masonry-hover-text-header"> 
+                      <h4> <a href="detail.html">Name of the work 5</a></h4>
+                      <div class="box-masonry-desription">
+                        <p>Fifth abundantly made Give sixth hath. Cattle creature i be don't them.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 masonry-item"> 
+                  <div class="box-masonry">
+                    <div class="box-masonry-text">
+                      <h4> <a href="detail.html">Name of the work 6</a></h4>
+                      <div class="box-masonry-desription">
+                        <p>Fifth abundantly made Give sixth hath. Cattle creature i be don't them.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 masonry-item"> 
+                  <div class="box-masonry"><a href="detail.html" title="" class="box-masonry-image with-hover-overlay with-hover-icon"><img src="img/portfolio/label-clothes.jpg" alt="" class="img-responsive"></a>
+                    <div class="box-masonry-text">
+                      <h4> <a href="detail.html" id="group1">Group 1</a></h4>
+                      <div class="box-masonry-desription" id="Group1desc">
+                        <p>Loren Ipsum</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 masonry-item"> 
+                  <div class="box-masonry"><a href="detail.html" title="" class="box-masonry-image with-hover-overlay with-hover-icon"><img src="img/portfolio/ipad-air-2.jpg" alt="" class="img-responsive"></a>
+                    <div class="box-masonry-text">
+                      <h4> <a href="detail.html">Name of the work 8</a></h4>
+                      <div class="box-masonry-desription">
+                        <p>Fifth abundantly made Give sixth hath. Cattle creature i be don't them.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 masonry-item"> 
+                  <div class="box-masonry"><a href="detail.html" title="" class="box-masonry-image with-hover-overlay with-hover-icon"><img src="img/portfolio/envelope-brand.jpg" alt="" class="img-responsive"></a>
+                    <div class="box-masonry-text">
+                      <h4> <a href="detail.html">Item with image</a></h4>
+                      <div class="box-masonry-desription">
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.  A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 masonry-item"> 
+                  <div class="box-masonry"><a href="detail.html" title="" class="box-masonry-image with-hover-overlay"><img src="img/portfolio/trifold.jpg" alt="" class="img-responsive"></a>
+                    <div class="box-masonry-hover-text-header"> 
+                      <h4> <a href="detail.html">Item with image</a></h4>
+                      <div class="box-masonry-desription">
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.  A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 masonry-item"> 
+                  <div class="box-masonry"><a href="detail.html" title="" class="box-masonry-image with-hover-overlay"><img src="img/portfolio/paper-presentation.jpg" alt="" class="img-responsive"></a>
+                    <div class="box-masonry-hover-text-header"> 
+                      <h4> <a href="detail.html">Item with image</a></h4>
+                      <div class="box-masonry-desription">
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.  A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
                 
                 
                 
@@ -811,126 +894,14 @@
             
            
              
-          <!--     <div class="grid">
-              <div class="row">
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 masonry-item"> 
-                  <div class="box-masonry"><a href="detail.html" title="" class="box-masonry-image with-hover-overlay"><img src="img/portfolio/a4-paper.jpg" alt="" class="img-responsive"></a>
-                    <div class="box-masonry-hover-text-header"> 
-                      <h4> <a href="detail.html">Name of the work 1</a></h4>
-                      <div class="box-masonry-desription">
-                        <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life. One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar. </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 masonry-item"> 
-                  <div class="box-masonry"><a href="detail.html" title="" class="box-masonry-image with-hover-overlay with-hover-icon"><img src="img/portfolio/business-card-26.jpg" alt="" class="img-responsive"></a>
-                    <div class="box-masonry-text">
-                      <h4> <a href="detail.html">Name of the work 2</a></h4>
-                      <div class="box-masonry-desription">
-                        <p> When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 masonry-item"> 
-                  <div class="box-masonry"><a href="detail.html" title="" class="box-masonry-image with-hover-overlay with-hover-icon"><img src="img/portfolio/gravity-paper.jpg" alt="" class="img-responsive"></a>
-                    <div class="box-masonry-text">
-                      <h4> <a href="detail.html">Name of the work 3</a></h4>
-                      <div class="box-masonry-desription">
-                        <p>Fifth abundantly made Give sixth hath. Cattle creature i be don't them.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 masonry-item"> 
-                  <div class="box-masonry">
-                    <div class="box-masonry-text">
-                      <h4> <a href="detail.html">Item without image</a></h4>
-                      <div class="box-masonry-desription">
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.  A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 masonry-item"> 
-                  <div class="box-masonry"><a href="detail.html" title="" class="box-masonry-image with-hover-overlay"><img src="img/portfolio/business-card.jpg" alt="" class="img-responsive"></a>
-                    <div class="box-masonry-hover-text-header"> 
-                      <h4> <a href="detail.html">Name of the work 5</a></h4>
-                      <div class="box-masonry-desription">
-                        <p>Fifth abundantly made Give sixth hath. Cattle creature i be don't them.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 masonry-item"> 
-                  <div class="box-masonry">
-                    <div class="box-masonry-text">
-                      <h4> <a href="detail.html">Name of the work 6</a></h4>
-                      <div class="box-masonry-desription">
-                        <p>Fifth abundantly made Give sixth hath. Cattle creature i be don't them.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 masonry-item"> 
-                  <div class="box-masonry"><a href="detail.html" title="" class="box-masonry-image with-hover-overlay with-hover-icon"><img src="img/portfolio/label-clothes.jpg" alt="" class="img-responsive"></a>
-                    <div class="box-masonry-text">
-                      <h4> <a href="detail.html">Name of the work 7</a></h4>
-                      <div class="box-masonry-desription">
-                        <p>Fifth abundantly made Give sixth hath. Cattle creature i be don't them.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 masonry-item"> 
-                  <div class="box-masonry"><a href="detail.html" title="" class="box-masonry-image with-hover-overlay with-hover-icon"><img src="img/portfolio/ipad-air-2.jpg" alt="" class="img-responsive"></a>
-                    <div class="box-masonry-text">
-                      <h4> <a href="detail.html">Name of the work 8</a></h4>
-                      <div class="box-masonry-desription">
-                        <p>Fifth abundantly made Give sixth hath. Cattle creature i be don't them.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 masonry-item"> 
-                  <div class="box-masonry"><a href="detail.html" title="" class="box-masonry-image with-hover-overlay with-hover-icon"><img src="img/portfolio/envelope-brand.jpg" alt="" class="img-responsive"></a>
-                    <div class="box-masonry-text">
-                      <h4> <a href="detail.html">Item with image</a></h4>
-                      <div class="box-masonry-desription">
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.  A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 masonry-item"> 
-                  <div class="box-masonry"><a href="detail.html" title="" class="box-masonry-image with-hover-overlay"><img src="img/portfolio/trifold.jpg" alt="" class="img-responsive"></a>
-                    <div class="box-masonry-hover-text-header"> 
-                      <h4> <a href="detail.html">Item with image</a></h4>
-                      <div class="box-masonry-desription">
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.  A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 masonry-item"> 
-                  <div class="box-masonry"><a href="detail.html" title="" class="box-masonry-image with-hover-overlay"><img src="img/portfolio/paper-presentation.jpg" alt="" class="img-responsive"></a>
-                    <div class="box-masonry-hover-text-header"> 
-                      <h4> <a href="detail.html">Item with image</a></h4>
-                      <div class="box-masonry-desription">
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.  A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div> -->
+                
           
           
           
           
           </div>
-          
+          <!--   *** PORTFOLIO END ***
+          -->
         </div>
       </div>
     </div>

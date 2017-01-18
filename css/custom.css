@@ -100,6 +100,13 @@ html,body
     font-weight: 300;
 }
 
+
+#listitem
+{
+    border-style: none;
+    text-align: left;
+}
+
 img#brand_logo.img-responsive
 {
     margin-left: 25px;    
@@ -121,7 +128,7 @@ img#brand_logo.img-responsive
 
 .wrapper
 {
-    background: url('img/mice/cover.png');
+    background: url('../img/mice/cover.png');
     background-position: center center;
     background-attachment: fixed;
     -webkit-background-size: cover;
@@ -145,7 +152,11 @@ img#brand_logo.img-responsive
     
 }
 
+.social
+{
+text-align:center;
 
+}
 
 .sidebar-menu
 {
