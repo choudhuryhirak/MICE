@@ -152,6 +152,12 @@ img#brand_logo.img-responsive
     
 }
 
+.toggle, .toggle-on, .toggle-off
+{
+    border-radius:20px;
+    
+}
+
 .social
 {
 text-align:center;
