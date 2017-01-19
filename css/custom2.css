@@ -1,5 +1,15 @@
 /* your styles go here */
 
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover
+{
+    
+    background-color: #202020;
+}
+
+
+
+
+
 a
 {
 color: #616161;
@@ -99,3 +109,17 @@ body.home
 {
   color: #d8b46a;
 }
+
+
+@media(max-width:450px)
+{
+    
+    .footer1, .footer2, .footer3
+    {
+        padding: 10%;
+        
+    }
+    
+    
+}
+

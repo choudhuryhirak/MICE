@@ -15,6 +15,21 @@
 
 */
 
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover
+{
+    
+    background-color: #202020;
+}
+
+
+
+
+
+
+
+
+
+
 
 html,body
 {
@@ -349,4 +364,16 @@ ul.pagination li a:hover:not(.active)
     border-style: solid;
     border-width: thin;
     border-color: #d8b46a;
+}
+
+@media(max-width:450px)
+{
+    
+    .footer1, .footer2, .footer3
+    {
+        padding: 10%;
+        
+    }
+    
+    
 }
