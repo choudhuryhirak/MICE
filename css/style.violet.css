@@ -403,6 +403,28 @@ SIDEBAR + RIGHT COLUMN
     padding-right: 40px;
   }
 }
+
+@media(max-width:525px)
+{
+    .small-navbar-heading
+        {
+          float: right;
+          font-size: 18px;
+          text-transform: uppercase;
+          letter-spacing: 0.1em;
+          margin-top: 0px;
+            margin-bottom: -15%;
+        }
+    
+    #cta
+    {
+        text-align: center;
+        padding: 2%;
+    }
+    
+}
+
+
 .content-column-content p.lead {
   color: #555555;
 }
