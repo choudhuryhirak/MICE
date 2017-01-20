@@ -51,14 +51,90 @@
                                       
               
               <ul class="sidebar-menu"> 
-                <li class="active"><a href="my_messages.html">Messages</a></li>
-                <li><a href="my_member.html">Member Directory</a></li>
-                <li><a href="my_groups.html">Groups</a></li>
+                <li><a href="my_messages.html">Messages</a></li>
+            <!--<li><a href="my_member.html">Member Directory</a></li>
+            <li><a href="my_groups.html">Groups</a></li>-->
                 <li><a href="my_bookmarks.html">Bookmarks</a></li>
-                <li><a href="my_subscriptions.html">Subscriptions</a></li>
+           <!-- <li><a href="my_subscriptions.html">Subscriptions</a></li> -->
                 <li><a href="my_settings.html">Settings</a></li>
               </ul>
-              <p class="social"><a href="#" data-animate-hover="pulse" class="external facebook"><i class="fa fa-facebook"></i></a><a href="#" data-animate-hover="pulse" class="external gplus"><i class="fa fa-linkedin"></i></a><a href="#" data-animate-hover="pulse" class="external twitter"><i class="fa fa-twitter"></i></a><a href="#" title="" class="external instagram"><i class="fa fa-flickr"></i></a><a href="#" data-animate-hover="pulse" class="email"><i class="fa fa-envelope"></i></a></p>
+              
+              <div class="row">
+                  
+                  <div class="panel panel-default"  style="text-align:center;">
+                                    <div class="panel-heading">
+                                        <p class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseFa"><span class="fa fa-folder-close">
+                                            </span>Facebook Feed</a>
+                                        </p>
+                                    </div>
+                                    <div id="collapseFa" class="panel-collapse collapse" style="height: 500px;">
+                                        <div class="panel-body">
+                                            
+                                            <div class="box">
+                                                
+                                                 <iframe id="facebook-feed" src="//www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Ffringe&width=125&height=500&show_faces=false&colorscheme=light&stream=true&border_color&header=true" scrolling="yes" frameborder="0" style="border:none; overflow:hidden; height:450px; width:100%;" allowTransparency="true"></iframe>
+                                                
+                                            </div>
+                                            
+                                            
+                                            
+                                            
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                  
+                  
+              </div>
+              
+              
+              <div class="row">
+                  
+                  <div class="panel panel-default" style="text-align:center; overflow:hidden;">
+                                    <div class="panel-heading">
+                                        <p class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseT"><span class="fa fa-folder-close">
+                                            </span>Twitter Feed</a>
+                                        </p>
+                                    </div>
+                                    <div id="collapseT" class="panel-collapse collapse" style="height: 500px;">
+                                        <div class="panel-body">
+                                            
+                                            <div class="box">
+                                                
+                                                <a class="twitter-timeline" href="https://twitter.com/FRINGEonFOX" data-width=100%
+                                                    data-height="400px"></a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+                                                
+                                                
+                                                
+                                                
+                                                 
+                                                
+                                            </div>
+                                            
+                                            
+                                            
+                                            
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                  
+                  
+              </div>
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              <p class="social"><a href="#" data-animate-hover="pulse" class="external facebook"><i class="fa fa-facebook"></i></a><a href="#" data-animate-hover="pulse" class="external gplus"><i class="fa fa-linkedin"></i></a><a href="#" data-animate-hover="pulse" class="external twitter"><i class="fa fa-twitter"></i></a><a href="#" data-animate-hover="pulse" class="email"><i class="fa fa-envelope"></i></a></p>
               <div class="copyright">        </div>
             </div>
           </div>
@@ -71,21 +147,22 @@
           <!--Logo area starts here with site search bar-->
           
            <div class="small-navbar visible-xs">
-               <img src="img/mice/logo.png" alt="" class="img-responsive">
+               <img src="img/mice/logo-xs-club.png" alt="" class="img-responsive" id="small_logo">
            </div>
             <div class="small-navbar visible-xs">
               <button type="button" data-toggle="offcanvas" class="btn btn-ghost pull-left"> <i class="fa fa-bars"> </i></button>
-              <h1 class="small-navbar-heading">
-                
-                 <!--Site search starts here!-->
-                  
-                   <form class="navbar-form" role="search">
-                    <div class="input-group add-on">
+              <div class="input-group add-on container-fluid" style="padding-left:3%;">
                       <input class="form-control" placeholder="Search" name="srch-site" id="srch-site" type="text">
                       <div class="input-group-btn">
                         <button class="btn btn-default" type="submit"><i class="fa fa-search"></i></button>
                       </div>
                      </div>
+              <h1 class="small-navbar-heading">
+                
+                 <!--Site search starts here!-->
+                  
+                   <form class="navbar-form" role="search">
+                    
                 </form>
                           
               </h1>
@@ -131,63 +208,66 @@
                   <!-- Collect the nav links, forms, and other content for toggling -->
                   <div id="navbar" class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" data-hover="dropdown" data-animations="fadeIn fadeIn fadeIn fadeIn">
                     <ul class="nav navbar-nav navbar-left">
-                     <li><a href="index.html">Home</a></li>
+                     <li class="dropdown"><a href="index.html">Home</a></li>
                       
                        <!--About-->
                        
                        <li class="dropdown">
                         <a href="member.html">Members</a>
-                        <ul class="dropdown-menu" role="menu">
+                        <!--<ul class="dropdown-menu" role="menu">
                           <li><a href="my_member.html">My Connections</a></li>
-                        </ul>
+                        </ul>-->
                         </li>
                              
                                           
                         
-                        <li>
+                        <li class="dropdown">
                         <a href="groups.html">Groups</a>
                         
                       </li>                                                          
                                                                      
                        <li class="dropdown">
                         <a href="events.html">Events</a>
-                        <ul class="dropdown-menu" role="menu">
-                          <li><a href="ecategory.html">Event Category 1</a></li>
-                          <li><a href="ecategory">Event Category 2</a></li>
-                          <li><a href="ecategory.html">Event Category 3</a></li>
-                          <li><a href="ecategory.html">Event Category 4</a></li>
-                          
-                        </ul>
+                            <!--<ul class="dropdown-menu" role="menu">
+                              <li><a href="ecategory.html">Event Category 1</a></li>
+                              <li><a href="ecategory">Event Category 2</a></li>
+                              <li><a href="ecategory.html">Event Category 3</a></li>
+                              <li><a href="ecategory.html">Event Category 4</a></li>
+
+                            </ul>-->
                       </li>
                                      
                         
                         <li class="dropdown">
                         <a href="resources.html">Resources</a>
-                        <ul class="dropdown-menu" role="menu">
+                        <!--<ul class="dropdown-menu" role="menu">
                           <li><a href="rcategory.html">Resource Category 1</a></li>
                           <li><a href="rcategory.html">Resource Category 2</a></li>
                           <li><a href="rcategory.html">Resource Category 3</a></li>
                           <li><a href="rcategory.html">Resource Category 4</a></li>
                           
-                        </ul>
+                        </ul>-->
                       </li>                          
                                       
                         
-                        <li>
+                        <li class="dropdown">
                         <a href="miceblog.html">Blog</a>
                         </li>                            
                            
                         <li class="dropdown">
                         <a href="media.html">Media</a>
-                        <ul class="dropdown-menu" role="menu">
+                        <!--<ul class="dropdown-menu" role="menu">
                           <li><a href="twitter.html">Twitter Feed</a></li>
                           <li><a href="facebook.html">Facebook Feed</a></li>
                           <li><a href="youtube.html">Youtube</a></li>
                           <li><a href="imgallery.html">Image Gallery</a></li>
                           
-                        </ul>
+                        </ul>-->
                       </li>                           
                         
+                        <li class="dropdown">
+                        <a href="contact.html">Contact</a>
+                        </li>
                           
                       
                     </ul>
@@ -723,24 +803,23 @@
             <div class="footer">
                 
                 <div class="row" id="footer1">
-            <div class="col-lg-3 col-md-3 col-sm-12">
+            <div class="col-lg-3 col-md-3 col-sm-12 container-fluid footer1">
                 <p class="lead">Quicklinks</p>
-                Media<br>
-                Events<br>
-                Forums<br>
-                Resources<br>
-                Sitemap<br>
+                <a href="media.html">Media<br></a>
+                <a href="events.html">Events<br></a>
+                <a href="resources.html">Resources<br></a>
+                <a href="#">Sitemap<br></a>
             </div>
-            <div class="col-lg-3 col-md-3 col-sm-12">
+            <div class="col-lg-3 col-md-3 col-sm-12 container-fluid footer2">
                 <p class="lead">Connect On</p>
-                Facebook<br>
-                Instagram<br>
-                LinkedIn<br>
-                Youtube<br>
-                Flickr<br>
+                <a href="#">Facebook<br></a>
+                <a href="#">Instagram<br></a>
+                <a href="#">LinkedIn<br></a>
+                <a href="#">Youtube<br></a>
+                <a href="#">Flickr<br></a>
             </div>
-            <div class="col-lg-6 col-md-6 col-sm-12">
-                <p class="lead">Contact Us</p>
+            <div class="col-lg-6 col-md-6 col-sm-12 container-fluid footer3">
+                <p class="lead">Subscribe to our mailing list</p>
                 
                  <form action="#">
                   <div class="input-group">

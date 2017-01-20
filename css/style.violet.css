@@ -404,7 +404,7 @@ SIDEBAR + RIGHT COLUMN
   }
 }
 
-@media(max-width:525px)
+@media(max-width:760px)
 {
     .small-navbar-heading
         {
@@ -413,7 +413,7 @@ SIDEBAR + RIGHT COLUMN
           text-transform: uppercase;
           letter-spacing: 0.1em;
           margin-top: 0px;
-            margin-bottom: -15%;
+            margin-bottom: -20%;
         }
     
     #cta

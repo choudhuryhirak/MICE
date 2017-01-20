@@ -1,6 +1,6 @@
 /* your styles go here */
 
-/* .navbar-nav > li > a 
+/* */.navbar-nav > li > a 
 {
     padding-top:5px !important; 
     padding-bottom:5px !important;
@@ -13,7 +13,19 @@
     
 }
 
-*/
+
+
+#navbar.navbar-collapse.collapse.in
+{
+    background-color: #424242;
+    border-radius: 3px;    
+    
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #fafafa;
+}
+
 
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover
 {
