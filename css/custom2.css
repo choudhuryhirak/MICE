@@ -41,6 +41,19 @@ body.home
     background-size: cover;
 }
 
+body.landing
+{
+
+    background: url('../img/mice/coverark.png');
+    background-position: center center;
+    background-attachment: fixed;
+    background-color: whitesmoke;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 #textlink
 {
     color: #616161;
@@ -109,6 +122,46 @@ body.home
 {
   color: #d8b46a;
 }
+
+#lrbutton
+{   
+    
+    border-radius: 5px;
+    color: white;
+    background-color: #d8b46a;
+    
+    
+}
+
+#lrbutton:hover
+{   
+    
+    border-radius: 5px;
+    color: white;
+    background-color: #cbab65;
+    
+    
+}
+
+
+#lsbutton
+{   
+    border: solid 1px #d8b46a;
+    border-radius: 5px;
+    color: white;
+    background-color: #434343;
+}
+
+#lsbutton:hover
+{   
+    border: solid 1px #242424;
+    border-radius: 5px;
+    color: white;
+    background-color: #434343;
+}
+
+
+
 
 
 @media(max-width:450px)
