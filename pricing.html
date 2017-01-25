@@ -31,7 +31,8 @@
   <body class="landing">
     <!-- navbar-->
       
-      <nav class="navbar navbar-static-top navbar-inverse navbar-fixed-top container-fluid" role="navigation">
+      <nav class="navbar navbar-static-top navbar-inverse navbar-fixed-top 
+               container-fluid" role="navigation">
                 <div class="container-fluid">
                   <!-- Brand and toggle get grouped for better mobile display -->
                   <div class="navbar-header">
@@ -57,11 +58,11 @@
                     </a>
                    
                     <ul class="nav navbar-nav navbar-left" style="padding-left:3%;">
-                        <li><a href="MICElanding.html">club</a></li>
+                        <li class="active"><a href="MICElanding.html">Club</a></li>
                       
     <!--About-->
                        
-                        <li class="active">
+                        <li>
                         <a href="pricing.html">Pricing</a>
                         
                         </li>
@@ -81,9 +82,9 @@
                     
                     
                     <ul class="nav navbar-nav navbar-right">
-                      <li><a href="" ><button class="btn btn-small pop" id="lrbutton">Register now</button></a></li>
+                      <li><a href="#" data-toggle="modal" data-target="#login-modal2"><button class="btn btn-small pop" id="lrbutton">Register now</button></a></li>
                       
-                      <li><a href="" ><button class="btn btn-small pop" id="lsbutton">Sign-In</button></a></li>
+                      <li><a href="#" data-toggle="modal" data-target="#login-modal"><button class="btn btn-small pop" id="lsbutton">Sign-In</button></a></li>
                     </ul>
                   </div><!-- /.navbar-collapse -->
                 </div><!-- /.container -->
@@ -94,6 +95,114 @@
 
     <!-- *** LOGIN MODAL ***_________________________________________________________
     -->
+    <div id="login-modal" tabindex="-1" role="dialog" aria-labelledby="Login" aria-hidden="true" class="modal fade">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" data-dismiss="modal" aria-hidden="true" class="close">×</button>
+            <h4 id="Login" class="modal-title">Sign in</h4>
+          </div>
+          <div class="modal-body">
+            <form action="#" method="post">
+              <div class="form-group">
+                <input id="email_modal" type="email" placeholder="email" class="form-control" required="true">
+              </div>
+              <div class="form-group">
+                <input id="password_modal" type="password" placeholder="password" class="form-control" required="true">
+              </div>
+              <p class="text-center">
+                <button type="submit" class="btn btn-primary"><i class="fa fa-sign-in"></i> Log in</button>
+              </p>
+              <hr>
+              
+              <div class="container-fluid" style="padding-top:5%;">
+                           <a class="btn btn-block btn-social btn-linkedin" title="sign in with linkedin"><i class="fa fa-linkedin">
+                           </i>Sign in with LinkedIn
+                           </a>
+                            <a class="btn btn-block btn-social btn-facebook" title="sign in with facebook">
+                            <i class="fa fa-facebook"></i> Sign in with Facebook
+                            </a>
+                            <a class="btn btn-block btn-social btn-google" title="sign in with google plus">
+                            <i class="fa fa-google-plus"></i> Sign in with Google +
+                            </a>
+                          
+                </div>
+            </form>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!--Register modal-->
+    
+    
+    <div id="login-modal2" tabindex="-1" role="dialog" aria-labelledby="Register" aria-hidden="true" class="modal fade">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" data-dismiss="modal" aria-hidden="true" class="close">×</button>
+            <h4 id="Login" class="modal-title">Register to Mice Club</h4>
+          </div>
+          <div class="modal-body">
+           <div class="row">
+               <div class="col-xs-8">
+                
+                            
+                 <form action="signinforms.php" id="myForm" method="post" name="myForm">
+                  <div class="form-group">
+                    <input type="email" placeholder="email" class="form-control" required="true" id="email_modal" name="email_aj" >
+                    
+                  </div>
+                  <div class="form-group">
+                    <input id="password_modal" name="pass_aj" onblur="validate('pass_aj', this.value)" type="password" placeholder="password" class="form-control" required="true">
+                    <div id="pass_aj" class="container-fluid"></div>
+                  </div>
+                  <div class="form-group">
+                    <input id="password_modal2" name="pass_aj2" onblur="validate('pass_aj2', this.value)" type="password" placeholder="verify password" class="form-control" required="true">
+                    <div id="pass_aj2" class="container-fluid"></div>
+                  </div>
+                  <p class="text-center">
+                    <button type="submit" class="btn btn-primary" onsubmit="checkform()"><i class="fa fa-sign-in"></i> Register</button>
+                  </p>
+                </form>
+                </div>
+                <div class="col-xs-4 container-fluid">
+                   <div class="row">
+                       <div class="container-fluid" style="padding-top:2%;">
+                           <a class="btn btn-block btn-social btn-linkedin">
+                           <i class="fa fa-linkedin"></i>Sign Up with LinkedIn
+                           </a>
+                            <a class="btn btn-block btn-social btn-facebook">
+                            <i class="fa fa-facebook"></i>Sign Up with Facebook
+                            </a>
+                            <a class="btn btn-block btn-social btn-google">
+                            <i class="fa fa-google-plus"></i>Sign Up with Google Plus
+                            </a>
+                          
+                       </div>
+                       
+                   </div>
+                    
+                </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <!-- *** LOGIN MODAL END ***-->
+    
+    
   <div class="wrapper">
     <!-- *** LOGIN MODAL END ***-->
    
