@@ -8,10 +8,10 @@
 
 
 
-html,body
+html,body.home
 {
     font-family: 'Source Sans Pro', sans-serif;
-    background-color: #424242
+    
 }
 
 
@@ -178,6 +178,10 @@ body.landing
     color: white;
     background-color: #434343;
 }
+
+
+
+
 
 
 
