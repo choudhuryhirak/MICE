@@ -24,11 +24,71 @@
     <link rel="stylesheet" href="css/style.violet2.css" id="theme-stylesheet">
     <!-- Custom stylesheet - for your changes-->
     <link rel="stylesheet" href="css/custom2.css">
+    <!--link to bootstrap social-->
+    <link rel="stylesheet" href="css/bootstrap-social.css">
+    
+    
     <!-- Tweaks for older IEs--><!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js">
+        </script><![endif]-->
+    <script>
+
+      function checkform()
+        {
+            
+            var password = document.getElementById("password_modal").value;
+            var password2 = document.getElementById("password_modal2").value;
+            var email = document.getElementById("email1").value;
+            
+            //alerting passwords dont match
+            
+            if(password != password2)
+                {
+                    alert("passwords dont match!")
+                }
+            else
+                {
+                 document.getElementById("myForm").submit();   
+                    
+                }
+                  
+        }//Ajax code to trigger
+        
+        function validate(field, query)
+        {
+            var xmlhttp;
+                if (window.XMLHttpRequest) { // for IE7+, Firefox, Chrome, Opera, Safari
+                xmlhttp = new XMLHttpRequest();
+                } else { // for IE6, IE5
+                xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+                }
+                xmlhttp.onreadystatechange = function() {
+                if (xmlhttp.readyState != 4 && xmlhttp.status == 200) {
+                document.getElementById(field).innerHTML = "Validating..";
+                } else if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                document.getElementById(field).innerHTML = xmlhttp.responseText;
+                } else {
+                document.getElementById(field).innerHTML = "Error Occurred. <a href='MICElanding.php'>Reload Or Try Again</a> the page.";
+                }
+                }
+                xmlhttp.open("GET", "validation.php?field=" + field + "&query=" + query, false);
+                xmlhttp.send();
+        }
+        
+        
+        
+        
+      
+      
+      
+    </script>    
+        
+        
+        
   </head>
   <body class="landing">
+   
     <!-- navbar-->
       
       <nav class="navbar navbar-static-top navbar-inverse navbar-fixed-top 
@@ -100,26 +160,44 @@
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" data-dismiss="modal" aria-hidden="true" class="close">×</button>
-            <h4 id="Login" class="modal-title">Customer login</h4>
+            <h4 id="Login" class="modal-title">Sign in</h4>
           </div>
           <div class="modal-body">
-            <form action="customer-orders.html" method="post">
+            <form action="#" method="post">
               <div class="form-group">
-                <input id="email_modal" type="text" placeholder="email" class="form-control" required="true">
+                <input id="email_modal" type="email" placeholder="email" class="form-control" required="true">
               </div>
               <div class="form-group">
                 <input id="password_modal" type="password" placeholder="password" class="form-control" required="true">
               </div>
               <p class="text-center">
-                <button type="button" class="btn btn-primary" method="post"><i class="fa fa-sign-in"></i> Log in</button>
+                <button type="button" class="btn btn-primary" method="submit"><i class="fa fa-sign-in"></i> Log in</button>
               </p>
+              <hr>
+              <h4 id="Login" class="modal-title">
+                  Sign in with your social account
+              </h4>
+              <div class="container-fluid" style="padding-top:5%;">
+                           <a class="btn btn-block btn-social btn-linkedin" title="sign in with linkedin"><i class="fa fa-linkedin">
+                           </i>Sign in with LinkedIn
+                           </a>
+                            <a class="btn btn-block btn-social btn-facebook" title="sign in with facebook">
+                            <i class="fa fa-facebook"></i> Sign in with Facebook
+                            </a>
+                            <a class="btn btn-block btn-social btn-google" title="sign in with google plus">
+                            <i class="fa fa-google-plus"></i> Sign in with Google +
+                            </a>
+                          
+                </div>
             </form>
-            <a href=""><p class="text-center text-muted">Not registered yet?</p></a>
-            <p class="text-center text-muted"><a href="#"><strong>Register now</strong></a>! It is easy and done in 1 minute and gives you access to special discounts and much more!</p>
+            
           </div>
         </div>
       </div>
     </div>
+    
+    <!--Register modal-->
+    
     
     <div id="login-modal2" tabindex="-1" role="dialog" aria-labelledby="Register" aria-hidden="true" class="modal fade">
       <div class="modal-dialog modal-lg">
@@ -131,31 +209,36 @@
           <div class="modal-body">
            <div class="row">
                <div class="col-xs-8">
-                <form action="customer-orders.html" method="post">
+                
+                            
+                 <form action="signinforms.html" id="myForm" method="post" name="myForm">
                   <div class="form-group">
-                    <input id="email_modal" type="text" placeholder="email" class="form-control" required="true">
+                    <input id="email_modal" name="email_aj" onblur="validate(email_aj, this.value)" type="email" placeholder="email" class="form-control" required="true">
+                    <div id="email_aj"></div>
                   </div>
                   <div class="form-group">
-                    <input id="password_modal" type="password" placeholder="password" class="form-control" required="true">
+                    <input id="password_modal" name="pass_aj" onblur="validate('pass_aj', this.value)" type="password" placeholder="password" class="form-control" required="true">
+                    <div id="pass_aj"></div>
                   </div>
                   <div class="form-group">
-                    <input id="password_modal" type="password" placeholder="verify password" class="form-control" required="true">
+                    <input id="password_modal2" name="pass_aj2" onblur="validate('pass_aj2', this.value)" type="password" placeholder="verify password" class="form-control" required="true">
+                    <div id="pass_aj2"></div>
                   </div>
                   <p class="text-center">
-                    <button type="button" class="btn btn-primary" method="post"><i class="fa fa-sign-in"></i> Register</button>
+                    <button type="button" value="submit" onclick="checkForm()" class="btn btn-primary"><i class="fa fa-sign-in"></i> Register</button>
                   </p>
                 </form>
                 </div>
                 <div class="col-xs-4 container-fluid">
                    <div class="row">
                        <div class="container-fluid" style="padding-top:2%;">
-                           <a class="btn btn-block btn-social btn-linkedin"><i class="fa fa-linkedin"></i>Sign in with LinkedIn</a>
-                           <a class="btn btn-block btn-social btn-facebook">
-                            <i class="fa fa-facebook"></i> Sign in with Facebook
-                          </a>
+                           <a class="btn btn-block btn-social btn-linkedin"><i class="fa fa-linkedin">   </i>Sign in with LinkedIn</a>
                             <a class="btn btn-block btn-social btn-facebook">
+                            <i class="fa fa-facebook"></i> Sign in with Facebook
+                            </a>
+                            <a class="btn btn-block btn-social btn-google">
                             <i class="fa fa-google-plus"></i> Sign in with Google Plus
-                          </a>
+                            </a>
                           
                        </div>
                        
@@ -194,7 +277,7 @@
            <div class="col-lg-7 pull-left" style="padding-left:5%; padding-top:2%;">
                     <h1> Mauris placerat eleifend leo.</h1>
                 <p class="lead">Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat.</p>
-                <p> <a href="" ><button class="btn btn-lg pop" id="lrbutton">Register now</button></a></p>       
+                <p> <a href="" data-toggle="modal" data-target="#login-modal2"><button class="btn btn-lg pop" id="lrbutton">Register now</button></a></p>       
            </div>
            <div class="col-lg-5">
                
