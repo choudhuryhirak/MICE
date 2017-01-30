@@ -1839,7 +1839,24 @@ label {
   font-size: 14px;
   
   letter-spacing: 0.1em;
+    
 }
+
+.list-group > label
+{
+    padding-left: 1%;
+    
+}
+
+
+.list-group > label:hover
+{
+    text-decoration: underline;
+    color: #242424;
+    
+}
+
+
 .form-control {
   display: block;
   width: 100%;
