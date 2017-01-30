@@ -1836,18 +1836,10 @@ fieldset[disabled] .btn-transparent.active {
 label {
   font-weight: normal;
   color: #555555;
-  font-size: 14px;  
+  font-size: 14px;
+  
   letter-spacing: 0.1em;
-  padding-left: 1%;
 }
-
-.list-group > label:hover
-{
-    text-decoration: underline;
-    color: #242424;
-    
-}
-
 .form-control {
   display: block;
   width: 100%;
